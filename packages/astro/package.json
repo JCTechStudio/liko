@@ -14,7 +14,10 @@
   ],
   "scripts": {},
   "devDependencies": {
-    "astro": "5.17.1"
+    "@vanilla-extract/css": "1.18.0",
+    "@vanilla-extract/vite-plugin": "5.1.4",
+    "astro": "5.17.1",
+    "tailwindcss": "4.1.18"
   },
   "peerDependencies": {
     "astro": "^5.0.0"
