@@ -14,11 +14,10 @@
   "homepage": "https://github.com/JCTechStudio/liko",
   "type": "module",
   "exports": {
-    ".": "./index.ts"
+    ".": "./dist/index.ts"
   },
   "files": [
-    "dist",
-    "index.ts"
+    "dist"
   ],
   "keywords": [
     "astro-component",
