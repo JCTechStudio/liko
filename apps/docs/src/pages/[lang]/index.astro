@@ -1,0 +1,48 @@
+---
+import StarlightPage from "@astrojs/starlight/components/StarlightPage.astro";
+import LogoLight from "../../assets/liko-ui-logo-light.webp";
+import LogoDark from "../../assets/liko-ui-logo-dark.webp";
+
+export { getStaticPaths } from "../../languages.ts";
+
+const { lang } = Astro.params;
+const t = Astro.locals.t as Function;
+
+const i18n = {
+  title: t("home.title"),
+  hero: {
+    tagline: t("home.hero.tagline"),
+    getStarted: t("home.hero.get-started"),
+    viewOnGitHub: t("home.hero.view-on-gitHub"),
+  },
+};
+---
+
+<StarlightPage frontmatter={{
+  title: i18n.title,
+  template: "splash",
+  hero: {
+    tagline: i18n.hero.tagline,
+    image: {
+      light: LogoLight,
+      dark: LogoDark
+    },
+    actions: [
+      {
+        text: i18n.hero.getStarted,
+        link: `/${lang}/getting-started/installation`,
+        icon: "laptop",
+      },
+      {
+        text: i18n.hero.viewOnGitHub,
+        link: "https://github.com/JCTechStudio/koi",
+        icon: "github",
+        variant: "minimal",
+        attrs: {
+          iconPosition: "start",
+        },
+      },
+    ],
+  },
+}}>
+</StarlightPage>
