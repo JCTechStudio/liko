@@ -1,0 +1,234 @@
+---
+title: Button
+description: Allows users to trigger an action or event.
+sidebar:
+  badge:
+    text: New!
+    variant: success
+---
+
+import { TabItem, Tabs } from "@astrojs/starlight/components";
+import { Button } from "@liko-ui/astro";
+import CodePreview from "../../../../components/CodePreview.astro";
+
+## Usage
+
+<Tabs>
+  <TabItem label="Preview">
+    <CodePreview>
+      <Button>Button</Button>
+    </CodePreview>
+  </TabItem>
+  <TabItem label="Code">
+    ```astro showLineNumbers
+    ---
+    import { Button } from '@kori/ui';
+    ---
+
+    <Button>
+      Button
+    </Button>
+    ```
+  </TabItem>
+</Tabs>
+
+### Shape
+
+<Tabs>
+  <TabItem label="Preview">
+    <CodePreview>
+      <Button shape="sharp">Button</Button>
+      <Button>Button</Button>
+      <Button shape="circular">Button</Button>
+    </CodePreview>
+  </TabItem>
+  <TabItem label="Code">
+    ```astro
+    ---
+    import { Button } from '@kori/ui';
+    ---
+
+    <Button shape="sharp">
+      Button
+    </Button>
+
+    <Button>
+      Button
+    </Button>
+
+    <Button shape="circular">
+      Button
+    </Button>
+    ```
+  </TabItem>
+</Tabs>
+
+### Fill
+
+<Tabs>
+  <TabItem label="Preview">
+    <CodePreview>
+      <Button>Button</Button>
+      <Button fill="tonal">Button</Button>
+      <Button fill="surface">Button</Button>
+      <Button fill="outline">Button</Button>
+      <Button fill="clear">Button</Button>
+      <Button fill="text">Button</Button>
+    </CodePreview>
+  </TabItem>
+  <TabItem label="Code">
+    ```astro
+    ---
+    import { Button } from '@kori/ui';
+    ---
+
+    <Button>
+      Button
+    </Button>
+
+    <Button fill="tonal">
+      Button
+    </Button>
+
+    <Button fill="surface">
+      Button
+    </Button>
+
+    <Button fill="outline">
+      Button
+    </Button>
+
+    <Button fill="clear">
+      Button
+    </Button>
+
+    <Button fill="text">
+      Button
+    </Button>
+    ```
+  </TabItem>
+</Tabs>
+
+### Size
+
+<Tabs>
+  <TabItem label="Preview">
+    <CodePreview>
+      <Button size="xs">Button (xs)</Button>
+      <Button size="sm">Button (sm)</Button>
+      <Button>Button (md)</Button>
+      <Button size="lg">Button (lg)</Button>
+      <Button size="xl">Button (xl)</Button>
+    </CodePreview>
+  </TabItem>
+  <TabItem label="Code">
+    ```astro
+    ---
+    import { Button } from '@kori/ui';
+    ---
+
+    <Button size="xs">
+      Button
+    </Button>
+
+    <Button size="sm">
+      Button
+    </Button>
+
+    <Button>
+      Button
+    </Button>
+
+    <Button size="lg">
+      Button
+    </Button>
+
+    <Button size="xl">
+      Button
+    </Button>
+    ```
+  </TabItem>
+</Tabs>
+
+### Block button
+
+<Tabs>
+  <TabItem label="Preview">
+    <CodePreview>
+      <Button block>Button</Button>
+    </CodePreview>
+  </TabItem>
+  <TabItem label="Code">
+    ```astro showLineNumbers
+    ---
+    import { Button } from '@kori/ui';
+    ---
+
+    <Button block>
+      Button
+    </Button>
+    ```
+  </TabItem>
+</Tabs>
+
+### Color
+
+<Tabs>
+  <TabItem label="Preview">
+    <CodePreview>
+      <Button palette="red">Button</Button>
+      <Button palette="green">Button</Button>
+      <Button>Button</Button>
+      <Button palette="cyan">Button</Button>
+      <Button palette="pink">Button</Button>
+    </CodePreview>
+  </TabItem>
+  <TabItem label="Code">
+    ```astro
+    ---
+    import { Button } from '@kori/ui';
+    ---
+
+    <Button palette="red">
+      Button
+    </Button>
+
+    <Button palette="green">
+      Button
+    </Button>
+
+    <Button>
+      Button
+    </Button>
+
+    <Button palette="cyan">
+      Button
+    </Button>
+
+    <Button palette="pink">
+      Button
+    </Button>
+    ```
+  </TabItem>
+</Tabs>
+
+### Disabled
+
+<Tabs>
+  <TabItem label="Preview">
+    <CodePreview>
+      <Button disabled>Button</Button>
+    </CodePreview>
+  </TabItem>
+  <TabItem label="Code">
+    ```astro showLineNumbers
+    ---
+    import { Button } from '@kori/ui';
+    ---
+
+    <Button disabled>
+      Button
+    </Button>
+    ```
+  </TabItem>
+</Tabs>
