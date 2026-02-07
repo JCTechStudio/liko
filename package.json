@@ -1,0 +1,10 @@
+{
+  "private": true,
+  "name": "liko",
+  "version": "0.0.0",
+  "description": "Monorepo for the @liko-ui library and the Liko docs app.",
+  "author": "JCTechStudio",
+  "type": "module",
+  "packageManager": "pnpm@10.20.0",
+  "license": "MIT"
+}
