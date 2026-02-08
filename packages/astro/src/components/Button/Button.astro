@@ -1,27 +1,51 @@
 ---
-import { button, type ButtonVariants } from "./button.css";
-import { paletteClass, type Palette } from "../../theme/palette.css";
-import type { HTMLAttributes } from "astro/types";
-
-export type ButtonProps = ButtonVariants & HTMLAttributes<"button"> & {
-  palette?: Palette;
-}
+import { button } from "./button.css";
+import { paletteClass } from "../../theme/palette.css";
+import type { ButtonProps } from "./Button.types.ts";
 
 const {
+  as: Tag = "button",
+  class: className,
+  type = "button",
+  disabled,
   shape,
   fill,
   size,
   block,
   palette = "amber",
-  class: className,
-  ...rest
+  loading,
+  loadingText,
+  loadingSpinner,
+  spinnerPlacement = "start",
+  ...props
 }: ButtonProps = Astro.props;
 ---
 
-<button class={[
+<Tag class:list={[
   button({ shape, fill, size, block }),
   paletteClass[palette],
   className,
-].filter(Boolean).join(" ")} {...rest}>
-  <slot />
-</button>
+]} {type} data-loading={loading} disabled={disabled || loading} {...props}>
+  {loading ?
+    (<span class="loading-content">
+      {spinnerPlacement === "start" && (
+        loadingText ?
+          (loadingSpinner ?? <span>[]</span>) :
+          (<span class="spinner-wrapper">
+            {loadingSpinner ?? <span>[]</span>}
+          </span>)
+      )}
+      {loadingText ??
+        <span class="text-wrapper">
+          <slot />
+        </span>}
+      {spinnerPlacement === "end" && (
+        loadingText ?
+          (loadingSpinner ?? <span>[]</span>) :
+          (<span class="spinner-wrapper">
+            {loadingSpinner ?? <span>[]</span>}
+          </span>)
+      )}
+    </span>) :
+    <slot />}
+</Tag>
