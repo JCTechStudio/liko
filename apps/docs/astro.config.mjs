@@ -43,8 +43,26 @@ export default defineConfig({
           tag: "link",
           attrs: {
             rel: "icon",
-            href: "/favicon.ico",
-            size: "16x16",
+            href: "/favicon.svg",
+            type: "image/svg+xml",
+          },
+        },
+        {
+          tag: "link",
+          attrs: {
+            rel: "icon",
+            href: "/favicon-light.png",
+            type: "image/png",
+            media: "(prefers-color-scheme: dark)",
+          },
+        },
+        {
+          tag: "link",
+          attrs: {
+            rel: "icon",
+            href: "/favicon-dark.png",
+            type: "image/png",
+            media: "(prefers-color-scheme: light)",
           },
         },
       ],
