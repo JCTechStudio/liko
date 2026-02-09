@@ -1,6 +1,6 @@
 import type { BaseProps, ColorProps } from "../Base.types.ts";
 import type { HTMLAttributes } from "astro/types";
-import type { ButtonVariants } from "../Button/button.css.ts";
+import type { ButtonVariants } from "./button.css.ts";
 
 type SpinnerPlacement = "start" | "end";
 
