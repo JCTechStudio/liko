@@ -1,6 +1,6 @@
-import { createThemeContract } from "@vanilla-extract/css";
+import { createGlobalThemeContract } from "@vanilla-extract/css";
 
-export const semanticColors = createThemeContract({
+export const semanticColors = createGlobalThemeContract({
   bg: {
     base: null,
     subtle: null,
@@ -47,4 +47,4 @@ export const semanticColors = createThemeContract({
     focusRing: null,
     border: null,
   },
-});
+}, (_value, path) => `${path.join("-")}`);
