@@ -57,6 +57,9 @@ const fill = styleVariants({
     },
   },
   surface: {
+    vars: {
+      [utils.shadow.color]: semanticColors.palette.muted,
+    },
     boxShadow: `0 0 0 1px ${utils.shadow.color}`,
     background: semanticColors.palette.subtle,
     color: semanticColors.palette.fg,
@@ -67,6 +70,10 @@ const fill = styleVariants({
     },
   },
   outline: {
+    vars: {
+      [utils.outline.color.base]: semanticColors.palette.border,
+      [utils.outline.color.legacy]: semanticColors.palette.muted,
+    },
     borderColor: fallbackVar(utils.outline.color.base, utils.outline.color.legacy),
     background: "transparent",
     color: semanticColors.palette.fg,
