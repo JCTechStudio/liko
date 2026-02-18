@@ -42,7 +42,7 @@ const fill = styleVariants({
     color: semanticColors.palette.contrast,
     selectors: {
       "&:not(:disabled):hover, &:not(:disabled)[aria-expanded='true']": {
-        backgroundColor: `color-mix(in srgb, ${semanticColors.palette.solid} 90%, transparent)`,
+        background: `color-mix(in srgb, ${semanticColors.palette.solid} 90%, transparent)`,
       },
     },
   },
