@@ -6,5 +6,10 @@
   "author": "JCTechStudio",
   "type": "module",
   "packageManager": "pnpm@10.20.0",
-  "license": "MIT"
+  "license": "MIT",
+  "scripts": {
+    "dev": "pnpm astro:build && pnpm docs:dev",
+    "astro:build": "pnpm --filter @liko-ui/astro run build",
+    "docs:dev": "pnpm --filter docs run dev"
+  }
 }
