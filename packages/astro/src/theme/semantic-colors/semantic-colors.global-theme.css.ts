@@ -3,6 +3,8 @@ import colors from "tailwindcss/colors";
 import { semanticColors } from "./semantic-colors.contract.css.ts";
 
 createGlobalTheme(":root", semanticColors, {
+  "@layer": "theme",
+
   bg: {
     base: colors.white,
     subtle: colors.gray[50],
@@ -52,6 +54,8 @@ createGlobalTheme(":root", semanticColors, {
 });
 
 createGlobalTheme("[data-theme='dark']", semanticColors, {
+  "@layer": "theme",
+
   bg: {
     base: colors.white,
     subtle: colors.gray[950],

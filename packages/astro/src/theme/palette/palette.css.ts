@@ -10,13 +10,17 @@ function makePalette(palette: Palette) {
   } = PALETTE_SEMANTICS[palette];
 
   return style({
-    vars: {
-      ...assignVars(semanticColors.palette, lightSemanticSpec),
-    },
-    selectors: {
-      "[data-theme='dark'] &": {
+    "@layer": {
+      theme: {
         vars: {
-          ...assignVars(semanticColors.palette, darkSemanticSpec),
+          ...assignVars(semanticColors.palette, lightSemanticSpec),
+        },
+        selectors: {
+          "[data-theme='dark'] &": {
+            vars: {
+              ...assignVars(semanticColors.palette, darkSemanticSpec),
+            },
+          },
         },
       },
     },
