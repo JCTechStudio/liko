@@ -5,7 +5,7 @@ import { palettes } from "../../theme/palette/palette.css";
 
 const {
   as: Tag = "button",
-  class: className,
+  class: classList,
   type = "button",
   disabled,
   shape,
@@ -28,8 +28,8 @@ const {
     size,
     block,
   }),
-  palettes[palette],
-  className,
+  palette ? palettes[palette] : "",
+  classList,
 ]} {type} data-loading={loading} disabled={disabled || loading} {...props}>
   {loading ?
     (<span class="loading-content">
