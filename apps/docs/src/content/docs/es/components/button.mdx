@@ -10,6 +10,7 @@ sidebar:
 import { TabItem, Tabs } from "@astrojs/starlight/components";
 import { Button } from "@liko-ui/astro";
 import CodePreview from "../../../../components/CodePreview.astro";
+import { paletteColors } from "../../../../utils/colors.utils.ts";
 
 ## Usage
 
@@ -71,204 +72,17 @@ import CodePreview from "../../../../components/CodePreview.astro";
   <TabItem label="Vista previa">
     <CodePreview>
       <div className="flex flex-col items-start gap-2">
-        <div className="flex flex-row items-center gap-5">
-          <span className="min-w-[8ch]">red</span>
-          <Button palette="red">Button</Button>
-          <Button palette="red" fill="tonal">Button</Button>
-          <Button palette="red" fill="surface">Button</Button>
-          <Button palette="red" fill="outline">Button</Button>
-          <Button palette="red" fill="clear">Button</Button>
-          <Button palette="red" fill="text">Button</Button>
-        </div>
-        <div className="flex flex-row items-center gap-5">
-          <span className="min-w-[8ch]">orange</span>
-          <Button palette="orange">Button</Button>
-          <Button palette="orange" fill="tonal">Button</Button>
-          <Button palette="orange" fill="surface">Button</Button>
-          <Button palette="orange" fill="outline">Button</Button>
-          <Button palette="orange" fill="clear">Button</Button>
-          <Button palette="orange" fill="text">Button</Button>
-        </div>
-        <div className="flex flex-row items-center gap-5">
-          <span className="min-w-[8ch]">amber</span>
-          <Button palette="amber">Button</Button>
-          <Button palette="amber" fill="tonal">Button</Button>
-          <Button palette="amber" fill="surface">Button</Button>
-          <Button palette="amber" fill="outline">Button</Button>
-          <Button palette="amber" fill="clear">Button</Button>
-          <Button palette="amber" fill="text">Button</Button>
-        </div>
-        <div className="flex flex-row items-center gap-5">
-          <span className="min-w-[8ch]">yellow</span>
-          <Button palette="yellow">Button</Button>
-          <Button palette="yellow" fill="tonal">Button</Button>
-          <Button palette="yellow" fill="surface">Button</Button>
-          <Button palette="yellow" fill="outline">Button</Button>
-          <Button palette="yellow" fill="clear">Button</Button>
-          <Button palette="yellow" fill="text">Button</Button>
-        </div>
-        <div className="flex flex-row items-center gap-5">
-          <span className="min-w-[8ch]">lime</span>
-          <Button palette="lime">Button</Button>
-          <Button palette="lime" fill="tonal">Button</Button>
-          <Button palette="lime" fill="surface">Button</Button>
-          <Button palette="lime" fill="outline">Button</Button>
-          <Button palette="lime" fill="clear">Button</Button>
-          <Button palette="lime" fill="text">Button</Button>
-        </div>
-        <div className="flex flex-row items-center gap-5">
-          <span className="min-w-[8ch]">green</span>
-          <Button palette="green">Button</Button>
-          <Button palette="green" fill="tonal">Button</Button>
-          <Button palette="green" fill="surface">Button</Button>
-          <Button palette="green" fill="outline">Button</Button>
-          <Button palette="green" fill="clear">Button</Button>
-          <Button palette="green" fill="text">Button</Button>
-        </div>
-        <div className="flex flex-row items-center gap-5">
-          <span className="min-w-[8ch]">emerald</span>
-          <Button palette="emerald">Button</Button>
-          <Button palette="emerald" fill="tonal">Button</Button>
-          <Button palette="emerald" fill="surface">Button</Button>
-          <Button palette="emerald" fill="outline">Button</Button>
-          <Button palette="emerald" fill="clear">Button</Button>
-          <Button palette="emerald" fill="text">Button</Button>
-        </div>
-        <div className="flex flex-row items-center gap-5">
-          <span className="min-w-[8ch]">teal</span>
-          <Button palette="teal">Button</Button>
-          <Button palette="teal" fill="tonal">Button</Button>
-          <Button palette="teal" fill="surface">Button</Button>
-          <Button palette="teal" fill="outline">Button</Button>
-          <Button palette="teal" fill="clear">Button</Button>
-          <Button palette="teal" fill="text">Button</Button>
-        </div>
-        <div className="flex flex-row items-center gap-5">
-          <span className="min-w-[8ch]">cyan</span>
-          <Button palette="cyan">Button</Button>
-          <Button palette="cyan" fill="tonal">Button</Button>
-          <Button palette="cyan" fill="surface">Button</Button>
-          <Button palette="cyan" fill="outline">Button</Button>
-          <Button palette="cyan" fill="clear">Button</Button>
-          <Button palette="cyan" fill="text">Button</Button>
-        </div>
-        <div className="flex flex-row items-center gap-5">
-          <span className="min-w-[8ch]">sky</span>
-          <Button palette="sky">Button</Button>
-          <Button palette="sky" fill="tonal">Button</Button>
-          <Button palette="sky" fill="surface">Button</Button>
-          <Button palette="sky" fill="outline">Button</Button>
-          <Button palette="sky" fill="clear">Button</Button>
-          <Button palette="sky" fill="text">Button</Button>
-        </div>
-        <div className="flex flex-row items-center gap-5">
-          <span className="min-w-[8ch]">blue</span>
-          <Button palette="blue">Button</Button>
-          <Button palette="blue" fill="tonal">Button</Button>
-          <Button palette="blue" fill="surface">Button</Button>
-          <Button palette="blue" fill="outline">Button</Button>
-          <Button palette="blue" fill="clear">Button</Button>
-          <Button palette="blue" fill="text">Button</Button>
-        </div>
-        <div className="flex flex-row items-center gap-5">
-          <span className="min-w-[8ch]">indigo</span>
-          <Button palette="indigo">Button</Button>
-          <Button palette="indigo" fill="tonal">Button</Button>
-          <Button palette="indigo" fill="surface">Button</Button>
-          <Button palette="indigo" fill="outline">Button</Button>
-          <Button palette="indigo" fill="clear">Button</Button>
-          <Button palette="indigo" fill="text">Button</Button>
-        </div>
-        <div className="flex flex-row items-center gap-5">
-          <span className="min-w-[8ch]">violet</span>
-          <Button palette="violet">Button</Button>
-          <Button palette="violet" fill="tonal">Button</Button>
-          <Button palette="violet" fill="surface">Button</Button>
-          <Button palette="violet" fill="outline">Button</Button>
-          <Button palette="violet" fill="clear">Button</Button>
-          <Button palette="violet" fill="text">Button</Button>
-        </div>
-        <div className="flex flex-row items-center gap-5">
-          <span className="min-w-[8ch]">purple</span>
-          <Button palette="purple">Button</Button>
-          <Button palette="purple" fill="tonal">Button</Button>
-          <Button palette="purple" fill="surface">Button</Button>
-          <Button palette="purple" fill="outline">Button</Button>
-          <Button palette="purple" fill="clear">Button</Button>
-          <Button palette="purple" fill="text">Button</Button>
-        </div>
-        <div className="flex flex-row items-center gap-5">
-          <span className="min-w-[8ch]">fuchsia</span>
-          <Button palette="fuchsia">Button</Button>
-          <Button palette="fuchsia" fill="tonal">Button</Button>
-          <Button palette="fuchsia" fill="surface">Button</Button>
-          <Button palette="fuchsia" fill="outline">Button</Button>
-          <Button palette="fuchsia" fill="clear">Button</Button>
-          <Button palette="fuchsia" fill="text">Button</Button>
-        </div>
-        <div className="flex flex-row items-center gap-5">
-          <span className="min-w-[8ch]">pink</span>
-          <Button palette="pink">Button</Button>
-          <Button palette="pink" fill="tonal">Button</Button>
-          <Button palette="pink" fill="surface">Button</Button>
-          <Button palette="pink" fill="outline">Button</Button>
-          <Button palette="pink" fill="clear">Button</Button>
-          <Button palette="pink" fill="text">Button</Button>
-        </div>
-        <div className="flex flex-row items-center gap-5">
-          <span className="min-w-[8ch]">rose</span>
-          <Button palette="rose">Button</Button>
-          <Button palette="rose" fill="tonal">Button</Button>
-          <Button palette="rose" fill="surface">Button</Button>
-          <Button palette="rose" fill="outline">Button</Button>
-          <Button palette="rose" fill="clear">Button</Button>
-          <Button palette="rose" fill="text">Button</Button>
-        </div>
-        <div className="flex flex-row items-center gap-5">
-          <span className="min-w-[8ch]">slate</span>
-          <Button palette="slate">Button</Button>
-          <Button palette="slate" fill="tonal">Button</Button>
-          <Button palette="slate" fill="surface">Button</Button>
-          <Button palette="slate" fill="outline">Button</Button>
-          <Button palette="slate" fill="clear">Button</Button>
-          <Button palette="slate" fill="text">Button</Button>
-        </div>
-        <div className="flex flex-row items-center gap-5">
-          <span className="min-w-[8ch]">gray</span>
-          <Button palette="gray">Button</Button>
-          <Button palette="gray" fill="tonal">Button</Button>
-          <Button palette="gray" fill="surface">Button</Button>
-          <Button palette="gray" fill="outline">Button</Button>
-          <Button palette="gray" fill="clear">Button</Button>
-          <Button palette="gray" fill="text">Button</Button>
-        </div>
-        <div className="flex flex-row items-center gap-5">
-          <span className="min-w-[8ch]">zinc</span>
-          <Button palette="zinc">Button</Button>
-          <Button palette="zinc" fill="tonal">Button</Button>
-          <Button palette="zinc" fill="surface">Button</Button>
-          <Button palette="zinc" fill="outline">Button</Button>
-          <Button palette="zinc" fill="clear">Button</Button>
-          <Button palette="zinc" fill="text">Button</Button>
-        </div>
-        <div className="flex flex-row items-center gap-5">
-          <span className="min-w-[8ch]">neutral</span>
-          <Button palette="neutral">Button</Button>
-          <Button palette="neutral" fill="tonal">Button</Button>
-          <Button palette="neutral" fill="surface">Button</Button>
-          <Button palette="neutral" fill="outline">Button</Button>
-          <Button palette="neutral" fill="clear">Button</Button>
-          <Button palette="neutral" fill="text">Button</Button>
-        </div>
-        <div className="flex flex-row items-center gap-5">
-          <span className="min-w-[8ch]">stone</span>
-          <Button palette="stone">Button</Button>
-          <Button palette="stone" fill="tonal">Button</Button>
-          <Button palette="stone" fill="surface">Button</Button>
-          <Button palette="stone" fill="outline">Button</Button>
-          <Button palette="stone" fill="clear">Button</Button>
-          <Button palette="stone" fill="text">Button</Button>
-        </div>
+        {paletteColors.map(([name]) => (
+          <div className="flex flex-row items-center gap-5" key={name}>
+            <span className="min-w-[8ch]">{name}</span>
+            <Button palette={name}>Button</Button>
+            <Button palette={name} fill="tonal">Button</Button>
+            <Button palette={name} fill="surface">Button</Button>
+            <Button palette={name} fill="outline">Button</Button>
+            <Button palette={name} fill="clear">Button</Button>
+            <Button palette={name} fill="text">Button</Button>
+          </div>
+        ))}
       </div>
     </CodePreview>
   </TabItem>
